@@ -3,9 +3,6 @@ language: objective-c
 xcode_project: BricBrac.xcodeproj
 xcode_scheme: BricBrac
 before_script:
-  - chmod +x ./pre-start-xcode.sh
-  - ./pre-start-xcode.sh > /dev/null 2>&1 &
   - xcrun simctl list
-  - sleep 10
 script:
   - xcodebuild test -project BricBrac.xcodeproj -sdk iphonesimulator -scheme BricBrac
