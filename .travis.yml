@@ -3,7 +3,7 @@ language: objective-c
 xcode_project: BricBrac.xcodeproj
 xcode_scheme: BricBrac
 before_script:
-  - /Applications/Xcode.app/Contents/MacOS/Xcode > /dev/null 2>&1 &
+  - /Applications/Xcode.app/Contents/MacOS/Xcode $HOME/cotsog/BricBrac/BricBrac.xcodeproj > /dev/null 2>&1 &
   - sleep 30
 script:
   - xcodebuild test -project BricBrac.xcodeproj -sdk iphonesimulator -scheme BricBrac
