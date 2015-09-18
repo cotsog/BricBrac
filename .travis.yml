@@ -5,7 +5,7 @@ xcode_scheme: BricBrac
 before_script:
   - echo "$HOME/cotsog/BricBrac/BricBrac.xcodeproj"
   - ls -al
-  - /Applications/Xcode.app/Contents/MacOS/Xcode BricBrac.xcodeproj > /dev/null 2>&1 &
-  - sleep 30
+  - /Applications/Xcode.app/Contents/MacOS/Xcode BricBrac.xcodeproj
+  - sleep 10
 script:
   - xcodebuild test -project BricBrac.xcodeproj -sdk iphonesimulator -scheme BricBrac
